@@ -5,7 +5,7 @@
 - Criar as pages...
   - [x] Criar o home. - [x] deixa-lo responsivo.
 
-  - [...] Criar o destination. - [] deixa-lo responsivo.
+  - [x] Criar o destination. - [x] deixa-lo responsivo.
 
   - [] Criar o crew. - [] deixa-lo responsivo.
 
