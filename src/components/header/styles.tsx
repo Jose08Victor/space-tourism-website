@@ -14,7 +14,7 @@ export const HeaderContainer = styled.header`
 
     hr {
         position: absolute;
-        top: 42px;
+        top: 41px;
         width: 35%;
         left: 200px;
         background-color: rgba(133, 133, 133, .5);
@@ -26,7 +26,7 @@ export const HeaderContainer = styled.header`
         }
     }
 
-    div {
+    nav {
         display: flex;
         width: 55%;
         height: 82px;
@@ -38,7 +38,7 @@ export const HeaderContainer = styled.header`
             color: #fff;
             letter-spacing: 1px;
             padding: 30px 0;
-            border-bottom:  3px solid transparent;  
+            border-bottom: 3px solid transparent;  
 
             &:hover {
                 border-bottom-color: #fff;
@@ -50,14 +50,14 @@ export const HeaderContainer = styled.header`
         }
     }
 
-    @media(max-width: 800px) {
+    @media(max-width: 900px) {
         margin-top: 0px;
 
         hr, strong {
             display: none;
         }
 
-        div {
+        nav {
             width: 65%;
         }
     }
@@ -65,13 +65,15 @@ export const HeaderContainer = styled.header`
     @media(max-width: 530px) {
         padding: 30px 0;
 
-        div {
+        nav {
             position: absolute;
             top: 0;
             right: -70%;
             height: 100vh;
+
             width: 70%;
             padding: 110px 40px;
+            background-color: rgba(0, 0, 0, .9);
             display: none;
 
             a p {
@@ -87,8 +89,9 @@ export const HeaderContainer = styled.header`
         }
 
         &.active {
-            div {
-                display: block;
+            nav {
+                // display: block;
+                display: none;
                 transform: translateX(-100%);
             }
         }
