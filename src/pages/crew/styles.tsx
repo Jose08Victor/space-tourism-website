@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-    background: url(https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/crew/background-crew-desktop.jpg?raw=true) no-repeat;
+    background: url(https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/crew/background-crew-desktop.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
 
@@ -62,8 +62,8 @@ export const Main = styled.main`
 
     @media (max-width: 900px) {
         padding-top: 12%;
-        background: url(https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/crew/background-crew-tablet.jpg?raw=true) no-repeat;
-    background-size: cover;
+        background: url(https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/crew/background-crew-tablet.jpg) no-repeat;
+        background-size: cover;
 
         h1 {
             transform: translateY(0%);
@@ -99,8 +99,8 @@ export const Main = styled.main`
     }
 
     @media (max-width: 530px) {
-        background: url(https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/crew/background-crew-mobile.jpg?raw=true) no-repeat;
-    background-size: cover;
+        background: url(https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/crew/background-crew-mobile.jpg) no-repeat;
+        background-size: cover;
 
         section {
             flex-direction: column-reverse;

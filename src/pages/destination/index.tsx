@@ -7,7 +7,7 @@ export const Destination = () => {
             <Title strong={1} title="PICK YOUR DESTINATION" />
 
             <section>
-                <img src="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/destination/image-moon.webp?raw=true" alt="Moon" />
+                <img src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/destination/image-moon.webp" alt="Moon" />
 
                 <Div1>
                     <nav>

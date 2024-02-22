@@ -25,7 +25,7 @@ export const Crew = () => {
                     </div>
                 </div>
                 
-                <img src="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/crew/image-douglas-hurley.webp?raw=true" alt="Douglas Hurley" />
+                <img src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/crew/image-douglas-hurley.webp" alt="Douglas Hurley" />
             </section>
 
         </Main>

@@ -3,13 +3,13 @@ import { HeaderContainer, Hamburger, IconX } from "./styles"
 export const Header = () => {
     return (
         <HeaderContainer className="active">
-            <img src="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/shared/logo.svg?raw=true" alt="Logo" />
+            <img src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/shared/logo.svg" alt="Logo" />
 
             <hr />
 
-            <Hamburger src="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/shared/icon-hamburger.svg?raw=true" alt="Icon Hamburger" />
+            <Hamburger src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/shared/icon-hamburger.svg" alt="Icon Hamburger" />
 
-            <IconX src="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/shared/icon-close.svg?raw=true" alt="Icon Close" />
+            <IconX src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/shared/icon-close.svg" alt="Icon Close" />
 
             <nav>
                 <a href="#">
@@ -23,7 +23,7 @@ export const Header = () => {
                 <a href="#">
                     <p><strong>02</strong> CREW</p>
                 </a>
-                
+
                 <a href="#">
                     <p><strong>03</strong> TECNOLOGY</p>
                 </a>

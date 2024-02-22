@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     color: #D0D6F9;
-    background: url("https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/home/background-home-desktop.jpg?raw=true") no-repeat;
+    background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/home/background-home-desktop.jpg") no-repeat;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -54,7 +54,7 @@ export const Main = styled.main`
     }
 
     @media(max-width: 900px) {
-        background: url("./src/assets/home/background-home-tablet.jpg") no-repeat;
+        background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/home/background-home-tablet.jpg") no-repeat;
         background-size: cover;
         flex-direction: column;
         align-items: center;
@@ -73,7 +73,7 @@ export const Main = styled.main`
     }
 
     @media(max-width: 530px) {
-        background: url("./src/assets/home/background-home-mobile.jpg") no-repeat;
+        background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/home/background-home-mobile.jpg") no-repeat;
         background-size: cover;
         gap: 90px;
 

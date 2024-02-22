@@ -24,9 +24,9 @@ export const Technology = () => {
                 </Div1>
 
                 <picture>
-                    <source srcSet="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/technology/image-launch-vehicle-portrait.jpg?raw=true" media="(min-width: 900px)" />
+                    <source srcSet="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/technology/image-launch-vehicle-portrait.jpg" media="(min-width: 900px)" />
 
-                    <img src="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/technology/image-launch-vehicle-landscape.jpg?raw=true" alt="Image Launch Vehicle Landscape" />
+                    <img src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/technology/image-launch-vehicle-landscape.jpg" alt="Image Launch Vehicle Landscape" />
                 </picture>
             </section>
         </Main>

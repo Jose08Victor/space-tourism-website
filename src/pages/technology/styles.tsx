@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     min-height: 100vh;
-    background: url("https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/technology/background-technology-desktop.jpg?raw=true") no-repeat;
+    background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/technology/background-technology-desktop.jpg") no-repeat;
     background-size: cover;
     padding: 8% 0 6%;
 
@@ -22,7 +22,7 @@ export const Main = styled.main`
     }
 
     @media (max-width: 900px) {
-        background: url("https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/technology/background-technology-tablet.jpg?raw=true") no-repeat;
+        background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/technology/background-technology-tablet.jpg") no-repeat;
         background-size: cover;
 
         section {
@@ -36,7 +36,7 @@ export const Main = styled.main`
     }
 
     @media (max-width: 530px) {
-        background: url("https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/technology/background-technology-mobile.jpg?raw=true") no-repeat;
+        background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/technology/background-technology-mobile.jpg") no-repeat;
         background-size: cover;
 
         picture img {
