@@ -7,9 +7,9 @@
 
   - [x] Criar o destination. - [x] deixa-lo responsivo.
 
-  - [] Criar o crew. - [] deixa-lo responsivo.
+  - [x] Criar o crew. - [x] deixa-lo responsivo.
 
-  - [] Criar o technology. - [] deixa-lo responsivo.
+  - [x] Criar o technology. - [x] deixa-lo responsivo.
 
 - [] Adicionar o data.json.
 
