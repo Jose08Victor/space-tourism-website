@@ -1,5 +1,6 @@
 import { Header } from "./components/header";
-import { Crew } from "./pages/crew";
+// import { Crew } from "./pages/crew";
+import { Technology } from "./pages/technology";
 // import { Destination } from "./pages/destination";
 // import { Home } from "./pages/home";
 
@@ -9,11 +10,13 @@ function App() {
     <>
       <Header />
       
-      {/* <Home /> */}
+      {/* <Home />
 
-      {/* <Destination /> */}
+      <Destination />
 
-      <Crew />
+      <Crew /> */}
+
+      <Technology />
     </>
   )
 }
