@@ -11,20 +11,6 @@ export const Main = styled.main`
     padding-bottom: 9%;
     padding: 12% 0 6%;
 
-    h1 {
-        font-size: 28px;
-        font-weight: 300;
-        letter-spacing: 4.72px;
-        color: #fff;
-        padding: 40px 0px 70px 120px;
-        
-        strong {
-            margin-right: 8px;
-            font-size: 27px;
-            color: #555;
-        }
-    }
-
     section {
         display: flex;
         justify-content: space-evenly;
@@ -32,14 +18,6 @@ export const Main = styled.main`
     }
 
     @media (max-width: 900px) {
-        h1 {
-            font-size: 20px;
-
-            strong {
-                font-size: 21px;
-            }
-        }
-
         section {
             flex-direction: column;
             gap: 40px;
@@ -52,15 +30,6 @@ export const Main = styled.main`
     }
 
     @media (max-width: 530px) {
-        h1 {
-            padding: 60px 0px 40px;
-            text-align: center;
-
-            strong {
-                margin-right: 4px;
-            }
-        }
-
         section img {
             max-width: 200px;
         }

@@ -1,10 +1,10 @@
-import { H1 } from "../../styles"
+import { Title } from "../../components/title"
 import { Main } from "./styles"
 
 export const Crew = () => {
     return (
         <Main>
-            <H1><strong>02</strong> MEET YOUR CREW</H1>
+            <Title strong={2} title="MEET YOUR CREW" />
 
             <section>
                 <div>

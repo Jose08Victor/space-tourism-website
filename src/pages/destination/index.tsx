@@ -1,9 +1,10 @@
+import { Title } from "../../components/title"
 import { Div1, Div2, Main } from "./styles"
 
 export const Destination = () => {
     return (
         <Main>
-            <h1><strong>01</strong> PICK YOUR DESTINATION</h1>
+            <Title strong={1} title="PICK YOUR DESTINATION" />
 
             <section>
                 <img src="https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/destination/image-moon.webp?raw=true" alt="Moon" />
