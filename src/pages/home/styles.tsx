@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Main = styled.main`
     color: #D0D6F9;
-    background: url("https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/home/background-home-desktop.jpg") no-repeat;
+    background: url("https://github.com/Jose08Victor/space-tourism-website/blob/main/src/assets/home/background-home-desktop.jpg?raw=true") no-repeat;
     background-size: cover;
     min-height: 100vh;
     display: flex;
