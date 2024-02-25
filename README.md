@@ -19,7 +19,7 @@
 
 - [x] Melhorar o menu hamburguer da page Home.
 
-- [] Adicionar o Link do React-dom.
+- [x] Adicionar o Link do React-dom.
 
 - [] Utilizar o Redux para gerenciar os estados da aplicação.
 
