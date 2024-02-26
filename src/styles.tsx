@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
       font-family: "Barlow Condensed", sans-serif;
+      text-transform: uppercase;
     }
     
     a {
