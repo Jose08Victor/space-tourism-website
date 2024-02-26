@@ -21,8 +21,8 @@
 
 - [x] Adicionar o Link do React-dom.
 
-- [] Utilizar o Redux para gerenciar os estados da aplicação.
+- [x] Utilizar o Context para gerenciar os estados da aplicação.
 
-- [] Refatorar o código. 
+- [x] Refatorar o código. 
 
 - [] Adicionar o README.md.
