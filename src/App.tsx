@@ -1,23 +1,11 @@
-import { Header } from "./components/header";
-import { Crew } from "./pages/crew";
-import { Technology } from "./pages/technology";
-import { Destination } from "./pages/destination";
-import { Home } from "./pages/home";
+import { AppRoutes } from "./routes";
+import { Provider } from "./contexts";
 
 function App() {
-
   return (
-    <>
-      <Header />
-      
-      <Home />
-
-      <Destination />
-
-      <Crew />
-
-      <Technology />
-    </>
+    <Provider>
+      <AppRoutes />
+    </Provider>
   )
 }
 
