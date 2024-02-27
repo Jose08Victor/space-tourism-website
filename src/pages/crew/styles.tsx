@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import { MainDefault } from "../../components/main/styles";
 
-export const Main = styled.main`
+export const Main = styled(MainDefault)`
     background: url(https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/crew/background-crew-desktop.jpg) no-repeat;
     background-size: cover;
-    min-height: 100vh;
 
     h1 {
         transform: translateY(110%);
@@ -18,7 +18,7 @@ export const Main = styled.main`
         gap: 10px;
 
         div {
-            max-width: 488px;
+            max-width: 588px;
 
             h4 {
                 font-size: 29px;
@@ -38,23 +38,35 @@ export const Main = styled.main`
 
             p {
                 color: #D0D6F9;
-                font-size: 19px;
+                font-size: 17px;
                 line-height: 32px;
                 font-weight: 300;
                 max-width: 460px;
                 margin-bottom: 120px;
             }
 
-            div {
-                width: 130px;
+            ul {
+                width: 160px;
                 display: flex;
                 justify-content: space-between;
                 
-                span {
-                    width: 13px;
-                    height: 13px;
+                li {
+                    width: 16px;
+                    height: 16px;
                     border-radius: 50%;
-                    background-color: #fff; 
+                    background-color: #D0D6F9; 
+                    transition: .3s ease-in-out;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.5);
+                        background-color: #fff; 
+                    }
+
+                    &.active {
+                        transform: scale(1.5);
+                        background-color: #fff; 
+                    }
                 }
             }
         }
@@ -69,7 +81,7 @@ export const Main = styled.main`
             transform: translateY(0%);
         }
 
-        section{
+        section {
             flex-direction: column;
             gap: 40px;
             text-align: center;
@@ -91,7 +103,7 @@ export const Main = styled.main`
                     margin-bottom: 40px;
                 }
 
-                div {
+                ul {
                     margin: 0 auto 20px;
                 }
             }
@@ -107,7 +119,7 @@ export const Main = styled.main`
             gap: 0px;
             padding: 0 30px;
             
-            div{
+            div {
                 border-top: 1px solid #555;
                 padding-top: 74px;
                 position: relative;
@@ -121,21 +133,21 @@ export const Main = styled.main`
                 }
     
                 p {
-                    font-size: 16px;
+                    font-size: 15px;
                 }
 
-                div {
+                ul {
                     position: absolute;
-                    top: -40px;
+                    top: 30px;
                     left: 0;
                     right: 0;
                     border-top: none;
                     padding-top: none;
-                    width: 88px;
+                    width: 98px;
 
-                    span {
-                        width: 10px;
-                        height: 10px;
+                    li {
+                        width: 12px;
+                        height: 12px;
                     }
                 }
             }

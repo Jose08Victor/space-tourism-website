@@ -1,10 +1,10 @@
 import styled from "styled-components"
+import { MainDefault } from "../../components/main/styles"
 
-export const Main = styled.main`
+export const Main = styled(MainDefault)`
     color: #D0D6F9;
     background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/destination/background-destination-desktop.jpg") no-repeat;
     background-size: cover;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -61,6 +61,10 @@ export const Div1 = styled.div`
                 &:hover {
                     border-bottom-color: #fff;
                 }
+
+                &.active {
+                    border-bottom-color: #fff;
+                }
             }
         }
     }
@@ -74,7 +78,7 @@ export const Div1 = styled.div`
     }
 
     p {
-        font-size: 18.2px;
+        font-size: 17px;
         line-height: 32px;
         font-weight: 300;
         margin-bottom: 42px;
@@ -103,7 +107,7 @@ export const Div1 = styled.div`
         }
 
         p {
-            font-size: 16px;
+            font-size: 15px;
             line-height: 25px;
             margin-bottom: 22px;
         }

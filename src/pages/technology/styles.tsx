@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { MainDefault } from "../../components/main/styles";
 
-export const Main = styled.main`
-    min-height: 100vh;
+export const Main = styled(MainDefault)`
     background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/technology/background-technology-desktop.jpg") no-repeat;
     background-size: cover;
     padding: 8% 0 6%;
@@ -49,7 +49,7 @@ export const Div1 = styled.div`
     display: flex;
     gap: 40px;
     
-    div:first-child {
+    ul {
         display: flex;
         flex-direction: column;
         font-family: "Bellefair", serif;
@@ -59,7 +59,7 @@ export const Div1 = styled.div`
             justify-content: space-evenly;
         }
 
-        span {
+        li {
             width: 70px;
             height: 70px;
             border-radius: 50%;
@@ -68,6 +68,20 @@ export const Div1 = styled.div`
             font-size: 32px;
             line-height: 70px;
             text-align: center;
+            cursor: pointer;
+            transition: .4s ease-in-out;
+
+            &:hover {
+                border: 1px solid transparent;
+                background-color: #fff;
+                color: #222;
+            }
+
+            &.active {
+                border: 1px solid transparent;
+                background-color: #fff;
+                color: #222;
+            }
         }
     }
 
@@ -90,7 +104,7 @@ export const Div1 = styled.div`
 
         p {
             color: #D0D6F9;
-            font-size: 18.2px;
+            font-size: 17px;
             line-height: 32px;
             font-weight: 300;
             max-width: 420px;
@@ -101,12 +115,12 @@ export const Div1 = styled.div`
         flex-direction: column;
         text-align: center;
 
-        div:first-child {
+        ul {
             flex-direction: row;
             width: 260px;
             margin: 0 auto 20px;
 
-            span {
+            li {
                 width: 60px;
                 height: 60px;
                 line-height: 60px;
@@ -136,11 +150,11 @@ export const Div1 = styled.div`
     @media (max-width: 530px) {
         gap: 25px;
 
-        div:first-child {
+        ul {
             width: 200px;
             margin: 0 auto;
 
-            span {
+            li {
                 width: 40px;
                 height: 40px;
                 line-height: 40px;
@@ -150,7 +164,7 @@ export const Div1 = styled.div`
 
         div {
             h4 {
-                font-size: 14px;
+                font-size: 13px;
                 margin-bottom: 9px;
             }
     
@@ -160,7 +174,7 @@ export const Div1 = styled.div`
             }
     
             p {
-                font-size: 15px;
+                font-size: 14px;
                 padding: 0 20px;
             }
         }

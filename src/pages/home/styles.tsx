@@ -1,15 +1,15 @@
 import styled from "styled-components";
+import { MainDefault } from "../../components/main/styles";
 
-export const Main = styled.main`
+export const Main = styled(MainDefault)`
     color: #D0D6F9;
     background: url("https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/home/background-home-desktop.jpg") no-repeat;
     background-size: cover;
-    min-height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: end;
     padding-bottom: 9%;
-    
+
     div {
         max-width: 410px;
         
@@ -33,7 +33,7 @@ export const Main = styled.main`
         }
     }
 
-    div h1, a{
+    div h1, a {
         font-family: "Bellefair", serif;
     }
 
