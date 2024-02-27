@@ -7,6 +7,7 @@ export const HeaderContainer = styled.header`
     justify-content: space-between;
     width: 100%;
     margin-top: 30px;
+    z-index: 1;
 
     img {
         padding: 0 40px;
@@ -34,20 +35,32 @@ export const HeaderContainer = styled.header`
         align-items: center;
         background-color: rgba(140, 140, 140, .2);
 
-        a p {
-            color: #fff;
-            letter-spacing: 1px;
-            padding: 30px 0;
-            border-bottom: 3px solid transparent;  
-
-            &:hover {
-                border-bottom-color: #fff;
+        a {
+            &.active {
+                p {
+                    border-bottom-color: #fff;
+                }
             }
 
-            strong {
-                padding-right: 5px;
-            }  
+            p {
+                color: #fff;
+                letter-spacing: 1px;
+                padding: 30px 0;
+                border-bottom: 3px solid transparent;  
+
+                &:hover {
+                    border-bottom-color: #fff;
+                }
+
+                strong {
+                    padding-right: 5px;
+                } 
+            }
         }
+    }
+
+    div {
+        display: none;
     }
 
     @media(max-width: 900px) {
@@ -69,18 +82,16 @@ export const HeaderContainer = styled.header`
             position: absolute;
             top: 0;
             right: -70%;
-            height: 100vh;
-
             width: 70%;
             padding: 110px 40px;
-            background-color: rgba(0, 0, 0, .9);
+            background: none;
             display: none;
-
+            
             a p {
                 padding: 16px 0;
                 font-size: 18px;
                 letter-spacing: 2px;
-
+                
                 strong {
                     display: inline;
                     padding-right: 8px;
@@ -88,24 +99,30 @@ export const HeaderContainer = styled.header`
             }          
         }
 
+        div {
+            display: block;
+            z-index: 1;
+
+            img:last-child {
+                display: none;
+            }
+        }
+        
         &.active {
             nav {
-                // display: block;
-                display: none;
-                transform: translateX(-100%);
+                display: block;
+                right: 0;
+            }
+
+            div {
+                img:first-child {
+                    display: none;
+                }
+    
+                img:last-child {
+                    display: block;
+                }
             }
         }
     }
-`
-
-export const Hamburger = styled.img`
-    display: none;
-
-    @media(max-width: 530px) {
-        display: block;
-    }
-`
-
-export const IconX = styled.img`
-    display: none;
 `
