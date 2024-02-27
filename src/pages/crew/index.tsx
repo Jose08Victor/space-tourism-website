@@ -1,33 +1,37 @@
-import { Title } from "../../components/title"
-import { Main } from "./styles"
+import { Title } from "../../components/title";
+import { Main } from "./styles";
+import { useContext, useState } from "react";
+import { changeClass } from "../../utils";
+import { DataContext } from "../../contexts";
 
 export const Crew = () => {
+    const Context = useContext(DataContext);
+
+    const [currentCrew, setCurrentCrew] = useState(Context?.data.crew[0]);
+
     return (
         <Main>
             <Title strong={2} title="MEET YOUR CREW" />
 
             <section>
                 <div>
-                    <h4>COMMANDER</h4>
+                    <h4>{currentCrew?.role}</h4>
 
-                    <h2>DOUGLAS HURLEY</h2>
+                    <h2>{currentCrew?.name}</h2>
 
-                    <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                    <p>{currentCrew?.bio}</p>
 
-                    <div>
-                        <span></span>
-
-                        <span></span>
-
-                        <span></span>
-
-                        <span></span>
-                    </div>
+                    <ul>
+                        {
+                            Context?.data.crew.map((crew, index) => (index === 0) ?
+                                <li className="active" key={index} onClick={(e) => { setCurrentCrew(crew), changeClass(e) }} ></li>
+                                : <li key={index} onClick={(e) => { setCurrentCrew(crew), changeClass(e) }} ></li>)
+                        }
+                    </ul>
                 </div>
-                
-                <img src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/crew/image-douglas-hurley.webp" alt="Douglas Hurley" />
-            </section>
 
+                <img src={currentCrew?.image} alt={currentCrew?.name} />
+            </section>
         </Main>
     )
 }

@@ -1,37 +1,45 @@
-import { Title } from "../../components/title"
-import { Div1, Div2, Main } from "./styles"
+import { Title } from "../../components/title";
+import { Div1, Div2, Main } from "./styles";
+import { useContext, useState } from "react";
+import { changeClass } from "../../utils";
+import { DataContext } from "../../contexts";
 
 export const Destination = () => {
+    const Context = useContext(DataContext);
+
+    const [currentDestination, setCurrentDestination] = useState(Context?.data.destinations[0]);
+
     return (
         <Main>
             <Title strong={1} title="PICK YOUR DESTINATION" />
 
             <section>
-                <img src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/destination/image-moon.webp" alt="Moon" />
+                <img src={currentDestination?.image} alt={currentDestination?.name} />
 
                 <Div1>
                     <nav>
                         <ul>
-                            <li>MOON</li>
-                            <li>MARS</li>
-                            <li>EUROPA</li>
-                            <li>TITAN</li>
+                            {
+                                Context?.data.destinations.map((destination, index) => (index === 0) ?
+                                    <li className="active" key={index} onClick={(e) => { setCurrentDestination(destination), changeClass(e) }} >{destination.name}</li>
+                                    : <li key={index} onClick={(e) => { setCurrentDestination(destination), changeClass(e) }} >{destination.name}</li>)
+                            }
                         </ul>
                     </nav>
 
-                    <h2>MOON</h2>
+                    <h2>{currentDestination?.name}</h2>
 
-                    <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    <p>{currentDestination?.description}</p>
 
                     <Div2>
                         <div>
                             <p>AVG. DISTANCE</p>
-                            <p>384,400 KM</p>
+                            <p>{currentDestination?.distance}</p>
                         </div>
 
                         <div>
                             <p>EST. TRAVEL TIME</p>
-                            <p>3 DAYS</p>
+                            <p>{currentDestination?.travel}</p>
                         </div>
                     </Div2>
                 </Div1>
