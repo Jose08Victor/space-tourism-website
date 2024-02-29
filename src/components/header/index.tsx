@@ -1,32 +1,16 @@
 import { useRef } from "react";
 import { HeaderContainer } from "./styles";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
     const headerRef = useRef<HTMLElement | null>(null);
-    const home = useRef<HTMLAnchorElement | null>(null);
-    const destination = useRef<HTMLAnchorElement | null>(null);
-    const crew = useRef<HTMLAnchorElement | null>(null);
-    const technology = useRef<HTMLAnchorElement | null>(null);
 
     const handleClick = () => {
         headerRef.current?.classList.toggle('active');
         document.querySelector('main')?.classList.toggle('active');
     };
 
-    const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent> | any) => {       
-        headerRef.current?.classList.remove('active');
-        document.querySelector('main')?.classList.remove('active');
-        document.querySelectorAll('a')?.forEach((e) => e.classList.remove('active'));
-
-        if(e.currentTarget === home.current) home.current?.classList.add('active');
-        if(e.currentTarget === destination.current || e === "destination") destination.current?.classList.add('active');
-        if(e.currentTarget === crew.current) crew.current?.classList.add('active');
-        if(e.currentTarget === technology.current) technology.current?.classList.add('active');
-    }
-
-    const { state } = useLocation()
-    if(state) handleLinkClick(state);
+    const removeclass = () => headerRef.current?.classList.remove('active');
 
     return (
         <HeaderContainer ref={headerRef}>
@@ -41,21 +25,21 @@ export const Header = () => {
             </div>
 
             <nav>
-                <Link to="/space-tourism-website" ref={home} onClick={(e) => handleLinkClick(e)} className="active">
+                <NavLink to="/space-tourism-website" onClick={removeclass} >
                     <p><strong>00</strong> HOME</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/space-tourism-website/destination" ref={destination} onClick={(e) => handleLinkClick(e)}>
+                <NavLink to="/destination" onClick={removeclass}>
                     <p><strong>01</strong> DESTINATION</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/space-tourism-website/crew" ref={crew} onClick={(e) => handleLinkClick(e)}>
+                <NavLink to="/crew" onClick={removeclass}>
                     <p><strong>02</strong> CREW</p>
-                </Link>
+                </NavLink>
 
-                <Link to="/space-tourism-website/technology" ref={technology} onClick={(e) => handleLinkClick(e)}>
-                    <p><strong>03</strong> TECNOLOGY</p>
-                </Link>
+                <NavLink to="/technology" onClick={removeclass}>
+                    <p><strong>03</strong> TECHNOLOGY</p>
+                </NavLink>
             </nav>
         </HeaderContainer>
     )
