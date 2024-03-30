@@ -13,7 +13,7 @@ export const Header = () => {
     const removeclass = () => headerRef.current?.classList.remove('active');
 
     return (
-        <HeaderContainer ref={headerRef}>
+        <HeaderContainer ref={headerRef} data-testid="header">
             <img src="https://raw.githubusercontent.com/Jose08Victor/space-tourism-website/main/src/assets/shared/logo.svg" alt="Logo" />
 
             <hr />
