@@ -35,7 +35,7 @@ export const Technology = () => {
                 <picture>
                     <source srcSet={currentTechnology?.images.portrait} media="(min-width: 900px)" />
 
-                    <img src={currentTechnology?.images.landscape} alt="Image Launch Vehicle Landscape" />
+                    <img src={currentTechnology?.images.landscape} alt={currentTechnology?.name} />
                 </picture>
             </section>
         </Main>
